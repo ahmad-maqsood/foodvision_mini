@@ -14,6 +14,5 @@ def create_effnetb2_model():
       nn.Dropout(p=0.3, inplace=True),
       nn.Linear(in_features=1408, out_features=3)
   )
-  model = torch.compile(model=model)
 
   return model, transforms
